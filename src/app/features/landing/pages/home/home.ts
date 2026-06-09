@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LucideArrowRight } from '@lucide/angular';
 
 type HiringStep = {
   number: string;
@@ -8,6 +9,7 @@ type HiringStep = {
 
 @Component({
   selector: 'app-home-page',
+  imports: [LucideArrowRight],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })

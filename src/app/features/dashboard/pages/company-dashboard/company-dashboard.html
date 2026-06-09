@@ -1,0 +1,76 @@
+<div class="dashboard-shell">
+  <header class="dashboard-header" aria-label="Dashboard navigation">
+    <a class="dashboard-brand" href="/" aria-label="Hirora home">
+      <span>HIRORA</span>
+      <i aria-hidden="true"></i>
+    </a>
+
+    <nav class="dashboard-nav" aria-label="Primary"></nav>
+
+    <div class="dashboard-actions">
+      <a href="#jobs">Jobs</a>
+      <a href="/company">Dashboard</a>
+      <a class="outline-action" href="/login">Logout</a>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <section class="dashboard-hero" aria-labelledby="dashboard-title">
+      <div>
+        <p class="dashboard-kicker">Company</p>
+        <h1 id="dashboard-title">Andrew's pipeline.</h1>
+      </div>
+
+      <a class="post-job-action" href="/company/jobs/new">+ Post a job</a>
+    </section>
+
+    <section class="stat-grid" aria-label="Hiring overview">
+      @for (stat of stats; track stat.label) {
+        <article class="stat-card">
+          <span>{{ stat.label }}</span>
+          <strong>{{ stat.value }}</strong>
+        </article>
+      }
+    </section>
+
+    <section class="dashboard-section" id="jobs" aria-labelledby="jobs-title">
+      <h2 id="jobs-title">Your jobs</h2>
+
+      <div class="dashboard-list">
+        @for (job of jobs; track job.title) {
+          <article class="job-row">
+            <div>
+              <h3>{{ job.title }}</h3>
+              <p>{{ job.meta }}</p>
+            </div>
+            <p>{{ job.stack }}</p>
+            <a href="/company/jobs/1">
+              <span>View matches</span>
+              <svg lucideArrowRight size="16" strokeWidth="2" aria-hidden="true"></svg>
+            </a>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section class="dashboard-section" aria-labelledby="interviews-title">
+      <h2 id="interviews-title">Recent interviews</h2>
+
+      <div class="dashboard-list">
+        @for (interview of interviews; track interview.candidate) {
+          <article class="interview-row">
+            <div>
+              <h3>{{ interview.candidate }}</h3>
+              <p>{{ interview.role }}</p>
+            </div>
+            <span>{{ interview.status }}</span>
+            <a href="#report">
+              <span>View report</span>
+              <svg lucideArrowRight size="16" strokeWidth="2" aria-hidden="true"></svg>
+            </a>
+          </article>
+        }
+      </div>
+    </section>
+  </main>
+</div>

@@ -1,0 +1,74 @@
+<div class="dashboard-shell">
+  <header class="dashboard-header" aria-label="Dashboard navigation">
+    <a class="dashboard-brand" href="/" aria-label="Hirora home">
+      <span>HIRORA</span>
+      <i aria-hidden="true"></i>
+    </a>
+
+    <nav class="dashboard-nav" aria-label="Primary"></nav>
+
+    <div class="dashboard-actions">
+      <a href="/company#jobs">Jobs</a>
+      <a href="/company">Dashboard</a>
+      <a class="outline-action" href="/login">Logout</a>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <section class="matches-hero" aria-labelledby="matches-title">
+      <div>
+        <p class="dashboard-kicker">Role</p>
+        <h1 id="matches-title">.NET Full Stack Developer</h1>
+        <p>Remote · 2-5 yrs · 5 openings · Mixed interview</p>
+
+        <div class="skill-tags" aria-label="Required skills">
+          @for (skill of skills; track skill) {
+            <span>{{ skill }}</span>
+          }
+        </div>
+      </div>
+
+      <button type="button">Re-run AI matching</button>
+    </section>
+
+    <section class="ranked-section" aria-labelledby="ranked-title">
+      <div class="section-heading-row">
+        <h2 id="ranked-title">AI-ranked candidates</h2>
+        <span>[ 1 candidate ]</span>
+      </div>
+
+      <article class="candidate-match">
+        <div class="candidate-copy">
+          <h3>JS</h3>
+          <p class="candidate-meta">Software Engineer · Coimbatore</p>
+          <p>
+            Excellent match with all must-have skills including ASP.NET Core, C#, Angular, SQL Server,
+            Entity Framework Core, and REST API. The candidate is based in Coimbatore, fits the requested
+            2-5 year range closely, and is ready for the next interview round.
+          </p>
+        </div>
+
+        <div class="candidate-scores" aria-label="Candidate score breakdown">
+          @for (score of scores; track score.label) {
+            <div>
+              <span>{{ score.label }}</span>
+              <strong>{{ score.value }}</strong>
+            </div>
+          }
+        </div>
+
+        <strong class="candidate-total">92</strong>
+        <div class="candidate-actions">
+          <button class="interview-action" type="button">
+            <span>Proceed to AI Interview</span>
+            <svg lucideArrowRight size="16" strokeWidth="2" aria-hidden="true"></svg>
+          </button>
+          <div>
+            <button type="button">Save</button>
+            <button type="button">Reject</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</div>

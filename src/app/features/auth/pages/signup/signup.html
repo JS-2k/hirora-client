@@ -1,0 +1,80 @@
+<main class="auth-shell auth-signup">
+  <section class="auth-panel auth-panel-dark" aria-label="Hirora signup message">
+    <a class="auth-brand" href="/" aria-label="Hirora home">
+      <span>HIRORA</span>
+      <i aria-hidden="true"></i>
+    </a>
+
+    <div class="auth-story">
+      @if (accountType === 'candidate') {
+        <h2>Get scored. Get interviewed. Get hired.</h2>
+        <p>[ create your candidate account ]</p>
+      } @else {
+        <h2>Stop reading resumes. Start hiring.</h2>
+        <p>[ create your company account ]</p>
+      }
+    </div>
+  </section>
+
+  <section class="auth-panel auth-form-panel" aria-labelledby="signup-title">
+    <div class="auth-form-wrap">
+      <p class="auth-kicker">Sign up</p>
+      <h1 id="signup-title">Create account</h1>
+
+      <div class="account-tabs" role="group" aria-label="Account type">
+        <button
+          [class.is-active]="accountType === 'candidate'"
+          type="button"
+          (click)="setAccountType('candidate')"
+        >
+          I'm a candidate
+        </button>
+        <button
+          [class.is-active]="accountType === 'hiring'"
+          type="button"
+          (click)="setAccountType('hiring')"
+        >
+          I'm hiring
+        </button>
+      </div>
+
+      <form class="auth-form">
+        @if (accountType === 'candidate') {
+          <label>
+            <span>Full name</span>
+            <input type="text" autocomplete="name" />
+          </label>
+        } @else {
+          <label>
+            <span>Contact person name</span>
+            <input type="text" autocomplete="name" />
+          </label>
+
+          <label>
+            <span>Company name</span>
+            <input type="text" autocomplete="organization" />
+          </label>
+        }
+
+        <label>
+          <span>Email</span>
+          <input type="email" autocomplete="email" />
+        </label>
+
+        <label>
+          <span>Phone</span>
+          <input type="tel" autocomplete="tel" />
+        </label>
+
+        <label>
+          <span>Password</span>
+          <input type="password" autocomplete="new-password" />
+        </label>
+
+        <button type="submit" formaction="/company">Create an account</button>
+      </form>
+
+      <p class="auth-switch">Already have an account? <a href="/login">Sign in</a></p>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,222 @@
+.matches-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: end;
+}
+
+.matches-hero h1 {
+  margin: 0;
+  font-size: clamp(42px, 4.6vw, 64px);
+  font-weight: 680;
+  line-height: 1;
+}
+
+.matches-hero p:not(.dashboard-kicker) {
+  margin: 18px 0 0;
+  color: #4f566d;
+  font-size: 16px;
+}
+
+.matches-hero button {
+  min-height: 39px;
+  padding: 0 16px;
+  border: 1px solid #050505;
+  background: transparent;
+  color: #050505;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  transition: background-color .2s ease, color .2s ease;
+}
+
+.matches-hero button:hover {
+  background: #050505;
+  color: #fff;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 780px;
+  margin-top: 18px;
+}
+
+.skill-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 27px;
+  padding: 0 12px;
+  border: 1px solid #cfcfca;
+  background: #fbfbf8;
+  font-size: 12px;
+}
+
+.ranked-section {
+  margin-top: 50px;
+}
+
+.section-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #deded9;
+}
+
+.section-heading-row h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 620;
+}
+
+.section-heading-row span {
+  color: #687088;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.candidate-match {
+  display: grid;
+  grid-template-columns: minmax(340px, 1fr) minmax(285px, .75fr) 110px minmax(250px, .62fr);
+  gap: clamp(28px, 4vw, 54px);
+  align-items: center;
+  padding: 28px 0 34px;
+}
+
+.candidate-copy h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  font-weight: 620;
+}
+
+.candidate-copy p {
+  margin: 0;
+  color: #4f566d;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.candidate-copy .candidate-meta {
+  margin-bottom: 12px;
+  color: #687088;
+  font-size: 14px;
+}
+
+.candidate-scores {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid #d7d7d1;
+}
+
+.candidate-scores div {
+  min-height: 60px;
+  padding: 11px 14px;
+  border-right: 1px solid #d7d7d1;
+}
+
+.candidate-scores div:last-child {
+  border-right: 0;
+}
+
+.candidate-scores span {
+  display: block;
+  color: #687088;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 9px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.candidate-scores strong {
+  display: block;
+  margin-top: 3px;
+  font-size: 20px;
+  font-weight: 680;
+}
+
+.candidate-total {
+  color: #ff3d00;
+  font-size: clamp(52px, 5vw, 72px);
+  font-weight: 720;
+  line-height: 1;
+}
+
+.candidate-actions {
+  display: grid;
+  gap: 8px;
+}
+
+.candidate-actions button {
+  min-height: 28px;
+  border: 1px solid #cfcfca;
+  background: transparent;
+  color: #050505;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  transition:
+    background-color .2s ease,
+    border-color .2s ease,
+    color .2s ease;
+}
+
+.candidate-actions button:hover {
+  border-color: #050505;
+}
+
+.candidate-actions .interview-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 32px;
+  border-color: #ff3d00;
+  background: #ff3d00;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.candidate-actions .interview-action:hover {
+  border-color: #050505;
+  background: #050505;
+}
+
+.candidate-actions div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+@media (max-width: 920px) {
+  .candidate-match {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .matches-hero,
+  .section-heading-row {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .candidate-scores {
+    grid-template-columns: 1fr;
+  }
+
+  .candidate-scores div,
+  .candidate-scores div:last-child {
+    border-right: 0;
+    border-bottom: 1px solid #d7d7d1;
+  }
+
+  .candidate-scores div:last-child {
+    border-bottom: 0;
+  }
+}

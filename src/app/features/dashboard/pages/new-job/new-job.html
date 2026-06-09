@@ -1,0 +1,85 @@
+<div class="dashboard-shell">
+  <header class="dashboard-header" aria-label="Dashboard navigation">
+    <a class="dashboard-brand" href="/" aria-label="Hirora home">
+      <span>HIRORA</span>
+      <i aria-hidden="true"></i>
+    </a>
+
+    <nav class="dashboard-nav" aria-label="Primary"></nav>
+
+    <div class="dashboard-actions">
+      <a href="/company#jobs">Jobs</a>
+      <a href="/company">Dashboard</a>
+      <a class="outline-action" href="/login">Logout</a>
+    </div>
+  </header>
+
+  <main class="job-form-main">
+    <section class="job-form-intro" aria-labelledby="new-job-title">
+      <p class="dashboard-kicker">New role</p>
+      <h1 id="new-job-title">Post a job.</h1>
+      <p>Hirora will instantly rank every candidate in your pool against this role.</p>
+    </section>
+
+    <form class="job-form">
+      <label class="field field-full">
+        <span>Job title</span>
+        <input type="text" placeholder="Senior Backend Engineer" />
+      </label>
+
+      <label class="field field-full">
+        <span>Description</span>
+        <textarea placeholder="What does this person do day-to-day, what stack, what problems will they solve?"></textarea>
+      </label>
+
+      <label class="field field-full">
+        <span>Required skills (comma-separated)</span>
+        <input type="text" placeholder="Python, FastAPI, AWS, PostgreSQL" />
+      </label>
+
+      <label class="field">
+        <span>Min experience (yrs)</span>
+        <input type="number" value="0" min="0" />
+      </label>
+
+      <label class="field">
+        <span>Max experience (yrs)</span>
+        <input type="number" value="5" min="0" />
+      </label>
+
+      <label class="field">
+        <span>Openings</span>
+        <input type="number" value="1" min="1" />
+      </label>
+
+      <label class="field">
+        <span>Salary min (annual)</span>
+        <input type="text" />
+      </label>
+
+      <label class="field">
+        <span>Salary max</span>
+        <input type="text" />
+      </label>
+
+      <label class="field">
+        <span>Location</span>
+        <input type="text" placeholder="Bangalore / Remote" />
+      </label>
+
+      <label class="field field-full">
+        <span>Interview type</span>
+        <select>
+          <option>Mixed</option>
+          <option>Technical</option>
+          <option>Behavioral</option>
+        </select>
+      </label>
+
+      <button type="submit">
+        <span>Post job & run AI matching</span>
+        <svg lucideArrowRight size="16" strokeWidth="2" aria-hidden="true"></svg>
+      </button>
+    </form>
+  </main>
+</div>

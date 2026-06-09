@@ -12,8 +12,8 @@
     </nav>
 
     <div class="nav-actions">
-      <a class="login-link" href="#login">Login</a>
-      <a class="primary-link" href="#get-started">Get Started</a>
+      <a class="login-link" href="/login">Login</a>
+      <a class="primary-link" href="/signup">Get Started</a>
     </div>
   </header>
 
@@ -26,9 +26,9 @@
       </p>
 
       <div class="hero-actions" aria-label="Hiring options">
-        <a class="button button-primary" href="#post-job">
+        <a class="button button-primary" href="/signup">
           <span>Post a job</span>
-          <span aria-hidden="true">-></span>
+          <svg lucideArrowRight size="16" strokeWidth="2" aria-hidden="true"></svg>
         </a>
         <a class="button button-secondary" href="#candidate">I'm a candidate</a>
       </div>
@@ -53,9 +53,213 @@
 
       <aside class="match-card" aria-label="AI match score">
         <span>AI Match Score</span>
-        <strong>94</strong>
+        <strong>94%</strong>
         <p>Sr. Backend Engineer · Bangalore · 6 yrs</p>
       </aside>
     </section>
   </main>
+
+  <section class="platform-section" id="features" aria-labelledby="platform-title">
+    <div class="section-kicker">[ The platform ]</div>
+    <h2 id="platform-title">Shortlist the right people faster.</h2>
+
+    <div class="feature-grid">
+      <article class="feature-card feature-card-wide">
+        <span class="feature-icon" aria-hidden="true">01</span>
+        <h3>Match scores you can explain</h3>
+        <p>
+          Every applicant is checked against the role, not just scanned for matching words. Hirora looks
+          at skills, experience, location, and the details candidates often hide in plain sight, then gives
+          your team a simple score with the reason behind it.
+        </p>
+
+        <div class="score-strip" aria-label="Example match score breakdown">
+          <div>
+            <span>Skill fit</span>
+            <strong>92</strong>
+          </div>
+          <div>
+            <span>Experience</span>
+            <strong>88</strong>
+          </div>
+          <div>
+            <span>Location</span>
+            <strong>100</strong>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-card feature-card-dark">
+        <span class="feature-icon" aria-hidden="true">02</span>
+        <h3>Interviews that feel like interviews</h3>
+        <p>
+          The AI asks follow-up questions when an answer feels thin, unclear, or too polished. It helps
+          confirm what the candidate has actually done, so your shortlist is based on more than a neat CV.
+        </p>
+
+        <div class="interview-note" aria-label="Example interview exchange">
+          <span>AI &gt; Tell me about the toughest production issue you handled.</span>
+          <span>Candidate &gt; We had a database bottleneck during a launch.</span>
+          <span>AI &gt; What changed after your fix?</span>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon" aria-hidden="true">03</span>
+        <h3>Reports your team can use</h3>
+        <p>
+          You get strengths, concerns, interview notes, and a clear recommendation in one place. It is
+          written for hiring managers who need the facts quickly, not another dashboard to decode.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-number">04</span>
+        <h3>Made for growing teams</h3>
+        <p>
+          Post a job, share the link, and start seeing ranked candidates without a long setup cycle. It is
+          useful for teams that need hiring structure before they have a full recruiting department.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-number">05</span>
+        <h3>Clear for candidates too</h3>
+        <p>
+          Candidates are not left guessing. They can see where they stand, complete the interview on their
+          time, and understand what happens next without chasing the company for updates.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="workflow-section" id="how-it-works" aria-labelledby="workflow-title">
+    <div class="section-kicker">[ How it works ]</div>
+    <h2 id="workflow-title">Four clear steps to your next hire.</h2>
+
+    <div class="workflow-list">
+      <article class="workflow-step">
+        <span class="workflow-number">01</span>
+        <h3>Post the role</h3>
+        <p>
+          Add the job title, must-have skills, salary range, location, and the kind of person you
+          actually want to meet. The clearer the brief, the better the shortlist.
+        </p>
+      </article>
+
+      <article class="workflow-step">
+        <span class="workflow-number">02</span>
+        <h3>Hirora ranks the pipeline</h3>
+        <p>
+          Each candidate is scored against the role with a short explanation, so your team can see why
+          someone is a strong fit instead of guessing from keywords.
+        </p>
+      </article>
+
+      <article class="workflow-step">
+        <span class="workflow-number">03</span>
+        <h3>Invite the right people</h3>
+        <p>
+          Review the top matches and approve the ones you want to interview. Hirora handles the first
+          round, and candidates can answer when it works for them.
+        </p>
+      </article>
+
+      <article class="workflow-step">
+        <span class="workflow-number">04</span>
+        <h3>Read the report</h3>
+        <p>
+          Get the recommendation, match score, interview summary, strengths, and concerns in one place.
+          You can move forward with confidence, or pass with a clear reason.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="pricing-section" id="pricing" aria-labelledby="pricing-title">
+    <div class="pricing-intro">
+      <div>
+        <div class="section-kicker">[ Pricing ]</div>
+        <h2 id="pricing-title">Start small. Upgrade when hiring gets busy.</h2>
+      </div>
+    </div>
+
+    <div class="pricing-grid">
+      <article class="price-card">
+        <span class="plan-label">Starter</span>
+        <h3>For one open role</h3>
+        <div class="price">
+          <strong>$49</strong>
+          <span>/ job</span>
+        </div>
+        <p>Best when you need to test the workflow or hire for a single position.</p>
+        <ul>
+          <li>1 active job post</li>
+          <li>Up to 100 candidates</li>
+          <li>AI match scoring</li>
+          <li>Basic hiring report</li>
+        </ul>
+        <a class="price-action" href="/signup">Post a job</a>
+      </article>
+
+      <article class="price-card price-card-featured">
+        <span class="plan-label">Growth</span>
+        <h3>For steady hiring</h3>
+        <div class="price">
+          <strong>$149</strong>
+          <span>/ month</span>
+        </div>
+        <p>Built for teams filling multiple roles and reviewing candidates every week.</p>
+        <ul>
+          <li>5 active job posts</li>
+          <li>Unlimited candidate scoring</li>
+          <li>AI interview round</li>
+          <li>Detailed reports for hiring managers</li>
+        </ul>
+        <a class="price-action price-action-primary" href="/signup">Get started</a>
+      </article>
+
+      <article class="price-card">
+        <span class="plan-label">Scale</span>
+        <h3>For larger teams</h3>
+        <div class="price">
+          <strong>Custom</strong>
+        </div>
+        <p>For companies that need more roles, team permissions, and hiring support.</p>
+        <ul>
+          <li>Unlimited active jobs</li>
+          <li>Team access and role controls</li>
+          <li>Custom report templates</li>
+          <li>Priority onboarding support</li>
+        </ul>
+        <a class="price-action" href="#contact">Talk to us</a>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <h2>Your next great hire could be in your inbox today.</h2>
+      <a href="/signup">
+        <span>Start hiring with AI</span>
+        <svg lucideArrowRight size="16" strokeWidth="2" aria-hidden="true"></svg>
+      </a>
+    </div>
+
+    <div class="footer-bottom">
+      <a class="footer-brand" href="/" aria-label="Hirora home">
+        <span>HIRORA</span>
+        <i aria-hidden="true"></i>
+      </a>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="/login">Login</a>
+      </nav>
+
+      <p>© Hirora 2026</p>
+    </div>
+  </footer>
 </div>

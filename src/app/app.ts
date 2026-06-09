@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { HomePage } from './features/landing/pages/home/home';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [HomePage],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
