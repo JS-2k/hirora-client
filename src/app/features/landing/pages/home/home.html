@@ -1,0 +1,61 @@
+<div class="home-shell">
+  <header class="site-header" aria-label="Main navigation">
+    <a class="brand" href="/" aria-label="Hirora home">
+      <span>HIRORA</span>
+      <i aria-hidden="true"></i>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="login-link" href="#login">Login</a>
+      <a class="primary-link" href="#get-started">Get Started</a>
+    </div>
+  </header>
+
+  <main class="hero">
+    <section class="hero-copy" aria-labelledby="hero-title">
+      <h1 id="hero-title">Hire in days, not months.</h1>
+      <p>
+        Hirora ranks every applicant against your job, interviews the shortlist with AI, and
+        hands you a hiring report your CEO will actually read.
+      </p>
+
+      <div class="hero-actions" aria-label="Hiring options">
+        <a class="button button-primary" href="#post-job">
+          <span>Post a job</span>
+          <span aria-hidden="true">-></span>
+        </a>
+        <a class="button button-secondary" href="#candidate">I'm a candidate</a>
+      </div>
+
+      <ol class="process-list" aria-label="Hiring process">
+        @for (step of hiringSteps; track step.number) {
+          <li [class.is-active]="step.active">
+            <span>{{ step.number }}</span>
+            <strong>{{ step.label }}</strong>
+          </li>
+        }
+      </ol>
+    </section>
+
+    <section class="hero-media" aria-label="AI hiring report preview">
+      <img
+        src="/assets/images/hirorahero_img.jpeg"
+        width="930"
+        height="920"
+        alt="A focused hiring team reviewing candidate profiles in a modern office"
+      />
+
+      <aside class="match-card" aria-label="AI match score">
+        <span>AI Match Score</span>
+        <strong>94</strong>
+        <p>Sr. Backend Engineer · Bangalore · 6 yrs</p>
+      </aside>
+    </section>
+  </main>
+</div>
