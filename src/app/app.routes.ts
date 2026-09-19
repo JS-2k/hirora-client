@@ -7,7 +7,7 @@ import { NewJobPage } from './features/dashboard/pages/new-job/new-job';
 import { JobMatchesPage } from './features/dashboard/pages/job-matches/job-matches';
 
 export const routes: Routes = [
-  { path: '', title: 'Hirora | Mock With AI  ', component: HomePage },
+  { path: '', title: 'Hirora | Practice. Prepare. Get Hired.  ', component: HomePage },
   { path: 'login', title: 'Login | Hirora', component: LoginPage },
   { path: 'signup', title: 'Sign up | Hirora', component: SignupPage },
   { path: 'company', title: 'Company Dashboard | Hirora', component: CompanyDashboardPage },
