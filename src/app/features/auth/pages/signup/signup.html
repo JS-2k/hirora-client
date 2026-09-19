@@ -31,36 +31,24 @@
       </div>
 
       <form class="auth-form">
-        @if (accountType === 'candidate') {
         <label>
           <span>Full name</span>
-          <input type="text" autocomplete="name" />
+          <input type="text" autocomplete="name" placeholder="John Doe" />
         </label>
-        } @else {
-        <label>
-          <span>Contact person name</span>
-          <input type="text" autocomplete="name" />
-        </label>
-
-        <label>
-          <span>College / Institute name</span>
-          <input type="text" autocomplete="organization" />
-        </label>
-        }
 
         <label>
           <span>Email</span>
-          <input type="email" autocomplete="email" />
+          <input type="email" autocomplete="email" placeholder="you@email.com" />
         </label>
 
         <label>
           <span>Phone</span>
-          <input type="tel" autocomplete="tel" />
+          <input type="tel" autocomplete="tel" placeholder="+91 98765 43210" />
         </label>
 
         <label>
           <span>Password</span>
-          <input type="password" autocomplete="new-password" />
+          <input type="password" autocomplete="new-password" placeholder="Min. 8 characters" />
         </label>
 
         <button type="submit" formaction="/company">Create an account</button>
