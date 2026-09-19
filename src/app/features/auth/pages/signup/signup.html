@@ -7,11 +7,11 @@
 
     <div class="auth-story">
       @if (accountType === 'candidate') {
-        <h2>Get scored. Get interviewed. Get hired.</h2>
-        <p>[ create your candidate account ]</p>
+      <h2>Practice. Improve. Land your first offer.</h2>
+      <p>[ create your fresher account ]</p>
       } @else {
-        <h2>Stop reading resumes. Start hiring.</h2>
-        <p>[ create your company account ]</p>
+      <h2>Prepare your campus for placements.</h2>
+      <p>[ create your college / institute account ]</p>
       }
     </div>
   </section>
@@ -22,38 +22,30 @@
       <h1 id="signup-title">Create account</h1>
 
       <div class="account-tabs" role="group" aria-label="Account type">
-        <button
-          [class.is-active]="accountType === 'candidate'"
-          type="button"
-          (click)="setAccountType('candidate')"
-        >
-          I'm a candidate
+        <button [class.is-active]="accountType === 'candidate'" type="button" (click)="setAccountType('candidate')">
+          I'm a fresher
         </button>
-        <button
-          [class.is-active]="accountType === 'hiring'"
-          type="button"
-          (click)="setAccountType('hiring')"
-        >
-          I'm hiring
+        <button [class.is-active]="accountType === 'hiring'" type="button" (click)="setAccountType('hiring')">
+          I'm from a college
         </button>
       </div>
 
       <form class="auth-form">
         @if (accountType === 'candidate') {
-          <label>
-            <span>Full name</span>
-            <input type="text" autocomplete="name" />
-          </label>
+        <label>
+          <span>Full name</span>
+          <input type="text" autocomplete="name" />
+        </label>
         } @else {
-          <label>
-            <span>Contact person name</span>
-            <input type="text" autocomplete="name" />
-          </label>
+        <label>
+          <span>Contact person name</span>
+          <input type="text" autocomplete="name" />
+        </label>
 
-          <label>
-            <span>Company name</span>
-            <input type="text" autocomplete="organization" />
-          </label>
+        <label>
+          <span>College / Institute name</span>
+          <input type="text" autocomplete="organization" />
+        </label>
         }
 
         <label>

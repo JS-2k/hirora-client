@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { LucideArrowRight } from '@lucide/angular';
 
-type HiringStep = {
+type InterviewStep = {
   number: string;
   label: string;
   active?: boolean;
@@ -14,10 +14,10 @@ type HiringStep = {
   styleUrl: './home.css'
 })
 export class HomePage {
-  protected readonly hiringSteps: HiringStep[] = [
-    { number: '01', label: 'Post' },
-    { number: '02', label: 'Match' },
-    { number: '03', label: 'Interview' },
-    { number: '04', label: 'Hire', active: true }
+  readonly interviewSteps: InterviewStep[] = [
+    { number: '01', label: 'Aptitude' },
+    { number: '02', label: 'F2F AI' },
+    { number: '03', label: 'Coding' },
+    { number: '04', label: 'Offer', active: true }
   ];
 }

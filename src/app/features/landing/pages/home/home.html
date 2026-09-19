@@ -13,121 +13,121 @@
 
     <div class="nav-actions">
       <a class="login-link" href="/login">Login</a>
-      <a class="primary-link" href="/signup">Get Started</a>
+      <a class="primary-link" href="/signup">Start Practicing</a>
     </div>
   </header>
 
   <main class="hero">
     <section class="hero-copy" aria-labelledby="hero-title">
-      <h1 id="hero-title">Hire in days, not months.</h1>
+      <h1 id="hero-title">Crack your first job with AI mock interviews.</h1>
       <p>
-        Hirora ranks every applicant against your job, interviews the shortlist with AI, and
-        hands you a hiring report your CEO will actually read.
+        Hirora gives freshers a real interview experience — aptitude tests, face-to-face AI
+        rounds, and coding challenges — so you walk into interviews fully prepared.
       </p>
 
-      <div class="hero-actions" aria-label="Hiring options">
+      <div class="hero-actions" aria-label="Interview options">
         <a class="button button-primary" href="/signup">
-          <span>Post a job</span>
+          <span>Start for free</span>
           <svg lucideArrowRight size="16" strokeWidth="2" aria-hidden="true"></svg>
         </a>
-        <a class="button button-secondary" href="#candidate">I'm a candidate</a>
+        <a class="button button-secondary" href="#features">See what's included</a>
       </div>
 
-      <ol class="process-list" aria-label="Hiring process">
-        @for (step of hiringSteps; track step.number) {
-          <li [class.is-active]="step.active">
-            <span>{{ step.number }}</span>
-            <strong>{{ step.label }}</strong>
-          </li>
+      <ol class="process-list" aria-label="Interview process">
+        @for (step of interviewSteps; track step.number) {
+        <li [class.is-active]="step.active">
+          <span>{{ step.number }}</span>
+          <strong>{{ step.label }}</strong>
+        </li>
         }
       </ol>
     </section>
 
-    <section class="hero-media" aria-label="AI hiring report preview">
-      <img
-        src="/assets/images/hirorahero_img.jpeg"
-        width="930"
-        height="920"
-        alt="A focused hiring team reviewing candidate profiles in a modern office"
-      />
+    <section class="hero-media" aria-label="AI mock interview preview">
+      <img src="/assets/images/hirorahero_img.jpeg" width="930" height="920"
+        alt="A fresher confidently practicing for a job interview on a laptop" />
 
-      <aside class="match-card" aria-label="AI match score">
-        <span>AI Match Score</span>
-        <strong>94%</strong>
-        <p>Sr. Backend Engineer · Bangalore · 6 yrs</p>
+      <aside class="match-card" aria-label="AI readiness score">
+        <span>Interview Readiness</span>
+        <strong>87%</strong>
+        <p>Aptitude · Coding · F2F AI Round</p>
       </aside>
     </section>
   </main>
 
   <section class="platform-section" id="features" aria-labelledby="platform-title">
     <div class="section-kicker">[ The platform ]</div>
-    <h2 id="platform-title">Shortlist the right people faster.</h2>
+    <h2 id="platform-title">Everything a fresher needs to get interview-ready.</h2>
 
     <div class="feature-grid">
       <article class="feature-card feature-card-wide">
         <span class="feature-icon" aria-hidden="true">01</span>
-        <h3>Match scores you can explain</h3>
+        <h3>Aptitude rounds that mirror real tests</h3>
         <p>
-          Every applicant is checked against the role, not just scanned for matching words. Hirora looks
-          at skills, experience, location, and the details candidates often hide in plain sight, then gives
-          your team a simple score with the reason behind it.
+          Practice quantitative, logical, and verbal aptitude questions at the same difficulty
+          level used by top companies. Hirora tracks your accuracy, speed, and weak areas,
+          then adapts the next session to build on where you struggled.
         </p>
 
-        <div class="score-strip" aria-label="Example match score breakdown">
+        <div class="score-strip" aria-label="Example aptitude score breakdown">
           <div>
-            <span>Skill fit</span>
-            <strong>92</strong>
+            <span>Quant</span>
+            <strong>85</strong>
           </div>
           <div>
-            <span>Experience</span>
-            <strong>88</strong>
+            <span>Logical</span>
+            <strong>91</strong>
           </div>
           <div>
-            <span>Location</span>
-            <strong>100</strong>
+            <span>Verbal</span>
+            <strong>78</strong>
           </div>
         </div>
       </article>
 
       <article class="feature-card feature-card-dark">
         <span class="feature-icon" aria-hidden="true">02</span>
-        <h3>Interviews that feel like interviews</h3>
+        <h3>Face-to-face with an AI interviewer</h3>
         <p>
-          The AI asks follow-up questions when an answer feels thin, unclear, or too polished. It helps
-          confirm what the candidate has actually done, so your shortlist is based on more than a neat CV.
+          The AI asks the same HR and behavioural questions a real recruiter would. It digs
+          deeper when your answer is vague, coaches your delivery, and scores your confidence
+          so you stop freezing up on the actual day.
         </p>
 
-        <div class="interview-note" aria-label="Example interview exchange">
-          <span>AI &gt; Tell me about the toughest production issue you handled.</span>
-          <span>Candidate &gt; We had a database bottleneck during a launch.</span>
-          <span>AI &gt; What changed after your fix?</span>
+        <div class="interview-note" aria-label="Example AI interview exchange">
+          <span>AI &gt; Tell me about yourself.</span>
+          <span>You &gt; I'm a CS graduate from Mumbai University…</span>
+          <span>AI &gt; Great. Walk me through your final-year project.</span>
         </div>
       </article>
 
       <article class="feature-card">
         <span class="feature-icon" aria-hidden="true">03</span>
-        <h3>Reports your team can use</h3>
+        <h3>Coding rounds with live AI feedback</h3>
         <p>
-          You get strengths, concerns, interview notes, and a clear recommendation in one place. It is
-          written for hiring managers who need the facts quickly, not another dashboard to decode.
+          Solve DSA problems in an in-browser editor and get instant feedback on correctness,
+          time complexity, and coding style — just like a real technical interview, but without
+          the pressure of being judged by a stranger.
         </p>
       </article>
 
       <article class="feature-card">
         <span class="feature-number">04</span>
-        <h3>Made for growing teams</h3>
+        <h3>Personalised performance reports</h3>
         <p>
-          Post a job, share the link, and start seeing ranked candidates without a long setup cycle. It is
-          useful for teams that need hiring structure before they have a full recruiting department.
+          After every session you get a clear report — what you did well, where you dropped
+          marks, and a focused practice plan for next time. No vague scores, just actionable
+          feedback you can act on today.
         </p>
       </article>
 
       <article class="feature-card">
         <span class="feature-number">05</span>
-        <h3>Clear for candidates too</h3>
+        <h3>Built specifically for freshers</h3>
         <p>
-          Candidates are not left guessing. They can see where they stand, complete the interview on their
-          time, and understand what happens next without chasing the company for updates.
+          Zero experience required. Whether you graduated last week or are still in your
+          final year, Hirora starts from where you are and builds your interview confidence
+          step by step.
         </p>
       </article>
     </div>
@@ -135,42 +135,42 @@
 
   <section class="workflow-section" id="how-it-works" aria-labelledby="workflow-title">
     <div class="section-kicker">[ How it works ]</div>
-    <h2 id="workflow-title">Four clear steps to your next hire.</h2>
+    <h2 id="workflow-title">Four steps from nervous to ready.</h2>
 
     <div class="workflow-list">
       <article class="workflow-step">
         <span class="workflow-number">01</span>
-        <h3>Post the role</h3>
+        <h3>Sign up and pick your track</h3>
         <p>
-          Add the job title, must-have skills, salary range, location, and the kind of person you
-          actually want to meet. The clearer the brief, the better the shortlist.
+          Choose the companies or roles you are targeting. Hirora sets up a personalised
+          practice plan with the right mix of aptitude, coding, and HR rounds for that track.
         </p>
       </article>
 
       <article class="workflow-step">
         <span class="workflow-number">02</span>
-        <h3>Hirora ranks the pipeline</h3>
+        <h3>Take the aptitude round</h3>
         <p>
-          Each candidate is scored against the role with a short explanation, so your team can see why
-          someone is a strong fit instead of guessing from keywords.
+          Work through timed aptitude tests that match the style of your target companies.
+          Hirora spots your weak topics and queues focused drills to close the gaps fast.
         </p>
       </article>
 
       <article class="workflow-step">
         <span class="workflow-number">03</span>
-        <h3>Invite the right people</h3>
+        <h3>Face the AI interviewer</h3>
         <p>
-          Review the top matches and approve the ones you want to interview. Hirora handles the first
-          round, and candidates can answer when it works for them.
+          Do a live F2F session with the AI — answer HR questions, tell your story, and
+          handle the follow-ups. You get a score and spoken feedback at the end of every round.
         </p>
       </article>
 
       <article class="workflow-step">
         <span class="workflow-number">04</span>
-        <h3>Read the report</h3>
+        <h3>Solve the coding challenge</h3>
         <p>
-          Get the recommendation, match score, interview summary, strengths, and concerns in one place.
-          You can move forward with confidence, or pass with a clear reason.
+          Tackle DSA problems in the in-browser IDE. The AI reviews your solution, suggests
+          optimisations, and explains the right approach so you learn, not just pass.
         </p>
       </article>
     </div>
@@ -180,57 +180,57 @@
     <div class="pricing-intro">
       <div>
         <div class="section-kicker">[ Pricing ]</div>
-        <h2 id="pricing-title">Start small. Upgrade when hiring gets busy.</h2>
+        <h2 id="pricing-title">Start free. Go deeper when you need to.</h2>
       </div>
     </div>
 
     <div class="pricing-grid">
       <article class="price-card">
-        <span class="plan-label">Starter</span>
-        <h3>For one open role</h3>
+        <span class="plan-label">Free</span>
+        <h3>For getting started</h3>
         <div class="price">
-          <strong>$49</strong>
-          <span>/ job</span>
+          <strong>₹0</strong>
+          <span>/ always</span>
         </div>
-        <p>Best when you need to test the workflow or hire for a single position.</p>
+        <p>Try the basics and see if Hirora is right for you — no card needed.</p>
         <ul>
-          <li>1 active job post</li>
-          <li>Up to 100 candidates</li>
-          <li>AI match scoring</li>
-          <li>Basic hiring report</li>
+          <li>5 aptitude practice sets</li>
+          <li>1 F2F AI mock interview</li>
+          <li>1 coding round</li>
+          <li>Basic performance report</li>
         </ul>
-        <a class="price-action" href="/signup">Post a job</a>
+        <a class="price-action" href="/signup">Start for free</a>
       </article>
 
       <article class="price-card price-card-featured">
-        <span class="plan-label">Growth</span>
-        <h3>For steady hiring</h3>
+        <span class="plan-label">Pro</span>
+        <h3>For serious prep</h3>
         <div class="price">
-          <strong>$149</strong>
+          <strong>₹499</strong>
           <span>/ month</span>
         </div>
-        <p>Built for teams filling multiple roles and reviewing candidates every week.</p>
+        <p>Built for freshers who are actively applying and need regular practice.</p>
         <ul>
-          <li>5 active job posts</li>
-          <li>Unlimited candidate scoring</li>
-          <li>AI interview round</li>
-          <li>Detailed reports for hiring managers</li>
+          <li>Unlimited aptitude rounds</li>
+          <li>Unlimited F2F AI interviews</li>
+          <li>Unlimited coding challenges</li>
+          <li>Detailed feedback and progress tracking</li>
         </ul>
         <a class="price-action price-action-primary" href="/signup">Get started</a>
       </article>
 
       <article class="price-card">
-        <span class="plan-label">Scale</span>
-        <h3>For larger teams</h3>
+        <span class="plan-label">Campus</span>
+        <h3>For colleges and batches</h3>
         <div class="price">
           <strong>Custom</strong>
         </div>
-        <p>For companies that need more roles, team permissions, and hiring support.</p>
+        <p>Get Hirora for your entire placement batch with dashboards for TPO teams.</p>
         <ul>
-          <li>Unlimited active jobs</li>
-          <li>Team access and role controls</li>
-          <li>Custom report templates</li>
-          <li>Priority onboarding support</li>
+          <li>Bulk student access</li>
+          <li>TPO performance dashboard</li>
+          <li>Company-specific mock rounds</li>
+          <li>Placement support</li>
         </ul>
         <a class="price-action" href="#contact">Talk to us</a>
       </article>
@@ -239,9 +239,9 @@
 
   <footer class="site-footer">
     <div class="footer-cta">
-      <h2>Your next great hire could be in your inbox today.</h2>
+      <h2>Your first offer could start with one mock interview today.</h2>
       <a href="/signup">
-        <span>Start hiring with AI</span>
+        <span>Start practicing with AI</span>
         <svg lucideArrowRight size="16" strokeWidth="2" aria-hidden="true"></svg>
       </a>
     </div>
