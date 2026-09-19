@@ -6,13 +6,8 @@
     </a>
 
     <div class="auth-story">
-      @if (accountType === 'candidate') {
-      <h2>Practice. Improve. Land your first offer.</h2>
-      <p>[ create your fresher account ]</p>
-      } @else {
-      <h2>Prepare your campus for placements.</h2>
-      <p>[ create your college / institute account ]</p>
-      }
+      <h2>Practice. Improve. Land your next offer.</h2>
+      <p>[ create your account ]</p>
     </div>
   </section>
 
@@ -20,15 +15,6 @@
     <div class="auth-form-wrap">
       <p class="auth-kicker">Sign up</p>
       <h1 id="signup-title">Create account</h1>
-
-      <div class="account-tabs" role="group" aria-label="Account type">
-        <button [class.is-active]="accountType === 'candidate'" type="button" (click)="setAccountType('candidate')">
-          I'm a fresher
-        </button>
-        <button [class.is-active]="accountType === 'hiring'" type="button" (click)="setAccountType('hiring')">
-          I'm from a college
-        </button>
-      </div>
 
       <form class="auth-form">
         <label>
