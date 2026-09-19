@@ -23,7 +23,7 @@
 .auth-brand {
   display: inline-flex;
   align-items: center;
-  gap: 2px;
+  gap: 8px;
   width: fit-content;
   color: #fff;
   font-size: 25px;
@@ -202,6 +202,7 @@
 }
 
 @media (max-width: 560px) {
+
   .auth-panel-dark,
   .auth-form-panel {
     padding-inline: 22px;
