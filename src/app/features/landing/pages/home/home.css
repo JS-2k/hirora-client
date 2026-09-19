@@ -185,6 +185,7 @@
 
 .process-list strong {
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .process-list .is-active {
