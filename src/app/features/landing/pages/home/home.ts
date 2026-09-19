@@ -18,6 +18,6 @@ export class HomePage {
     { number: '01', label: 'Aptitude' },
     { number: '02', label: 'F2F AI' },
     { number: '03', label: 'Coding' },
-    { number: '04', label: 'Offer', active: true }
+    { number: '04', label: 'Report', active: true }
   ];
 }
