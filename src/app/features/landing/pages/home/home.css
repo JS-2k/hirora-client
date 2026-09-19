@@ -168,7 +168,6 @@
   display: flex;
   align-items: center;
   gap: 7px;
-  min-width: 116px;
   color: #4c506d;
   font-size: 10px;
   text-transform: uppercase;
@@ -448,7 +447,7 @@
   }
 
   .process-list {
-    grid-template-columns: repeat(2, minmax(112px, 1fr));
+    grid-template-columns: repeat(4, auto);
   }
 
   .hero-media {
@@ -544,7 +543,7 @@
   }
 
   .process-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, auto);
     gap: 13px;
     margin-top: 34px;
   }
